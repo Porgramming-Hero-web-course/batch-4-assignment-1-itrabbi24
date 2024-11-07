@@ -1,4 +1,6 @@
-// Problem Is: Write a TypeScript function sumArray that 
+// Problem 01: 
+
+// Write a TypeScript function sumArray that 
 // takes an array of numbers and returns the sum of all elements in the array.
 
 // Sample Input:
