@@ -57,3 +57,48 @@ displayData();
 
 
 ```
+
+## Callback
+Callbacks is a mechanism in Object Oriented Programming that allows an application to 
+handle subscribed events, arising at runtime, through a listener interface. The subscribers 
+will need to provide a concrete implementation of the interface abstract methods.
+
+```tsx
+
+function fetchData(callback: (data: string) => void) {
+  setTimeout(() => {
+    callback("Data fetched");
+  }, 1000);
+}
+
+fetchData((data) => {
+  console.log(data);
+});
+
+
+```
+
+
+## Promise
+
+The `promise()` method returns a dynamically generated Promise that is 
+resolved once all actions of a certain type bound to the collection, 
+queued or not, have ended. 
+
+
+```tsx
+
+function fetchData(): Promise<string> {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data fetched");
+    }, 1000);
+  });
+}
+
+fetchData().then((data) => {
+  console.log(data);
+});
+
+
+```
